@@ -1,0 +1,23 @@
+<a href="#/posts">Go Back</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title text-center">Edit Post</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+        <form ng-submit="editPost()" ng-init="getPost()">
+          <div class="form-group">
+            <label class="text-center">Title</label>
+            <input type="text" class="form-control" ng-model="post.title"  placeholder="Title">
+          </div>
+          <div class="form-group">
+            <label class="text-center">Content</label>
+            <textarea class="form-control" ng-model="post.postContent" placeholder="Content Here"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
