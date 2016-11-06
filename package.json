@@ -10,6 +10,7 @@
     "body-parser": "*",
     "bower": "^1.7.9",
     "express": "*",
+    "mongodb": "^2.2.11",
     "mongoose": "*"
   },
   "author": "",
