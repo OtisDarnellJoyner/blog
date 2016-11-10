@@ -9,9 +9,10 @@ app.use(bodyParser.json());
 Post = require('./models/post');
 
 // Connect to mongoose
-// This is for local - mongoose.connect('mongodb://localhost/blogpost');
+// This is for local -
+mongoose.connect('mongodb://localhost/blogpost');
 var mongodbUri = 'mongodb://heroku_z75f6zgj:hhl655vnac7csv10c0es6co8dl@ds145997.mlab.com:45997/heroku_z75f6zgj';
-mongoose.connect(mongodbUri);
+//mongoose.connect(mongodbUri);
 
 var db = mongoose.connection;
 
@@ -79,5 +80,5 @@ app.delete('/api/posts/:_id', function(req, res){
 });
 
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000, '0.0.0.0');
 console.log('server is running on port 3000');
