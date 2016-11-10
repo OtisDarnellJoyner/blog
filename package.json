@@ -1,7 +1,7 @@
 {
   "name": "restful-blog-api",
   "version": "1.0.0",
-  "engines":{
+  "engines": {
     "node": "4.5.0"
   },
   "description": "",
@@ -18,5 +18,8 @@
     "mongoose": "*"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
