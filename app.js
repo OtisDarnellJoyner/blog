@@ -12,10 +12,7 @@ Post = require('./models/post');
 // This is for local -
 mongoose.connect('mongodb://localhost/blogpost');
 
-var mongodbUri = 'mongodb://heroku_z75f6zgj:hhl655vnac7csv10c0es6co8dl@ds145997.mlab.com:45997/heroku_z75f6zgj';
-
 //var mongodbUri = 'mongodb://heroku_z75f6zgj:hhl655vnac7csv10c0es6co8dl@ds145997.mlab.com:45997/heroku_z75f6zgj';
-
 //mongoose.connect(mongodbUri);
 
 //var db = mongoose.connection;
